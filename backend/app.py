@@ -23,7 +23,7 @@ from langchain.chains import ConversationalRetrievalChain
 from models import Document, session
 
 # TODO: make this better than keeping in the repo
-cred = firebase_admin.credentials.Certificate("firebase_key.json")
+cred = firebase_admin.credentials.Certificate(os.environ["FIREBASEJSON"])
 database_url = os.environ["FIREBASE_URL"]
 firebase_admin.initialize_app(cred, {"databaseURL": database_url})
 

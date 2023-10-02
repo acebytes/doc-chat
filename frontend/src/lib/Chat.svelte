@@ -40,7 +40,7 @@
     });
     
     const firebaseConfig = {
-        databaseURL: "https://cloud-whitepapers-index-default-rtdb.firebaseio.com",
+        databaseURL: "https://agent01-571e4.firebaseapp.com",
     };
     
     const app = initializeApp(firebaseConfig);
